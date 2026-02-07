@@ -39,3 +39,4 @@ The project uses low cost components and can be easily implemented in real agric
 
 Conclusion
 This project fulfills all submission requirements by clearly demonstrating sensor selection, data flow, alert logic, system architecture, and edge cloud integration.
+
