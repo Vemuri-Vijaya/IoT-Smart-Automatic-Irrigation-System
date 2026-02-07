@@ -1,0 +1,41 @@
+IoT Based Smart Automatic Irrigation System
+
+Student Name: Vemuri Vijaya
+Domain: IoT Smart Agriculture
+
+Submission Requirements
+
+Sensor Selection
+This project uses a soil moisture sensor to measure the water content in the soil. The sensor helps in deciding when irrigation is required. An ESP32 microcontroller is used as the main processing unit because it supports WiFi connectivity and edge level processing. A relay module is used to control the water pump safely. The water pump is used to supply water automatically to crops.
+
+Data Flow
+The soil moisture sensor collects real time data from the soil. The ESP32 reads and processes the sensor values. Based on predefined threshold logic, a decision is taken to turn the water pump ON or OFF. The processed data is sent to the cloud through Wi-Fi for monitoring.
+
+Alert Logic
+When the soil moisture value goes below the threshold, the water pump is turned ON indicating dry soil condition. When the soil moisture value is above the threshold, the water pump is turned OFF.
+
+System Architecture
+The system consists of a soil moisture sensor connected to an ESP32 microcontroller. The ESP32 acts as an edge gateway and connects to the cloud using Wi-Fi. The cloud platform stores and displays sensor data. The water pump is controlled using a relay module.
+
+Sensor List and Justification
+Soil moisture sensor is used to detect soil condition and prevent over irrigation. ESP32 microcontroller is used for processing and communication. Relay module is used for safe control of the water pump. Water pump is used to automate irrigation.
+
+Data Flow Explanation
+Sensor data is collected at the field level and processed at the edge device. Threshold based logic is applied in the ESP32. Pump control decisions are made locally. Data is sent to the cloud for real time monitoring.
+
+Sample Output Format
+Device id ESP32 01
+Sensor Soil Moisture
+Moisture Value 30
+Pump Status ON
+Alert Soil Dry
+Timestamp 08 February 2026 10 15 AM
+
+Edge and Cloud Logic
+Real time decisions such as pump control are handled at the edge using ESP32. The cloud is used for data storage and visualization only. This reduces latency and improves efficiency.
+
+Practical Feasibility
+The project uses low cost components and can be easily implemented in real agricultural fields. The system is scalable and can be extended by adding more sensors.
+
+Conclusion
+This project fulfills all submission requirements by clearly demonstrating sensor selection, data flow, alert logic, system architecture, and edge cloud integration.

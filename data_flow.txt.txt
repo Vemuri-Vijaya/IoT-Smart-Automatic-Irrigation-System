@@ -1,0 +1,22 @@
+DATA FLOW
+
+Step 1:
+The soil moisture sensor measures the moisture content present in the soil.
+
+Step 2:
+The sensor sends analog data to the ESP32 microcontroller.
+
+Step 3:
+ESP32 processes the sensor value and compares it with the predefined threshold.
+
+Step 4:
+If soil moisture is below the threshold, the ESP32 turns the water pump ON using a relay.
+If soil moisture is above the threshold, the ESP32 turns the water pump OFF.
+
+Step 5:
+ESP32 sends sensor readings and pump status to the cloud using Wi-Fi.
+
+Step 6:
+The data can be monitored remotely for analysis and decision making.
+
+This data flow enables automated irrigation with minimal human intervention.

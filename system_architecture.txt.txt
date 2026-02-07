@@ -1,0 +1,23 @@
+SYSTEM ARCHITECTURE
+
+The IoT Based Smart Automatic Irrigation System follows a simple edge and cloud based architecture.
+
+Soil Moisture Sensor:
+The soil moisture sensor is placed in the soil to continuously measure the moisture content.
+
+ESP32 Microcontroller:
+The ESP32 acts as the edge device. It reads data from the soil moisture sensor, applies threshold logic, and controls the water pump automatically.
+
+Relay Module:
+The relay module is used to switch the water pump ON or OFF based on ESP32 control signals.
+
+Water Pump:
+The water pump supplies water to the field when soil moisture is below the required level.
+
+Wi-Fi Connectivity:
+ESP32 uses Wi-Fi to send sensor data to the cloud platform.
+
+Cloud Platform:
+The cloud stores sensor data and allows remote monitoring of soil moisture and pump status.
+
+This architecture ensures real time monitoring, automatic control, and reduced water wastage.
